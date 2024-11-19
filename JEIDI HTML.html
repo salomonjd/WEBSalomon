@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEIDI - Sincerely Happy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* General styles */
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            height: 80vh;
+            background-image: url('HEADERPIC.jpg');
+            /* Replace with actual path */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+            padding-top: 5rem;
+            /* For fixed navbar spacing */
+        }
+
+        header .display-4 {
+            font-family: 'Krona One', sans-serif;
+            font-weight: bold;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Light shadow */
+        }
+
+        .text-warning {
+            color: #ff9800 !important;
+        }
+
+        /* Section padding */
+        section {
+            padding: 3rem 0;
+        }
+
+        /* Song Card styles */
+        .song-card {
+            border: none;
+        }
+
+        .song-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Ensure the whole image fits */
+            background-color: #f8f9fa;
+            /* Adds neutral background color for blank spaces */
+        }
+
+        .song-card .image-container {
+            width: 100%;
+            /* Ensures a responsive square */
+            aspect-ratio: 1 / 1;
+            /* Maintains a perfect square */
+            overflow: hidden;
+        }
+
+        /* Contact Section */
+        #contact a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        footer p:first-child {
+            font-family: 'Krona One', sans-serif;
+        }
+
+        /* Song Description Toggle */
+        .song-description {
+            display: none;
+            /* Initially hidden */
+        }
+
+        .toggle-btn {
+            background-color: #ffc107;
+            border: none;
+            color: #212529;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"
+                style="font-family: 'Anonymous Pro', monospace; font-weight: bold;">JEIDI</a>
+
+            <!-- Toggle Button for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about"
+                            style="font-family: 'Krona One', sans-serif; text-transform: uppercase;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#releases"
+                            style="font-family: 'Krona One', sans-serif; text-transform: uppercase;">Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#contact"
+                            style="font-family: 'Krona One', sans-serif; text-transform: uppercase;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header Section-->
+    <header class="d-flex align-items-center justify-content-center text-center bg-dark text-white py-5">
+        <div class="text-center">
+            <!-- Header Text -->
+            <h1 class="display-4">
+                JUST GET IT <span class="text-warning">STARTED♪</span>
+            </h1>
+
+            <!-- Buttons Section -->
+            <div class="mt-4">
+                <a href="https://open.spotify.com/artist/0Hhl6oiHVkq5MjPrVW7bUm?si=ctHB0X_jTpOn3e0yW8uwnQ"
+                    target="_blank" class="btn text-dark"
+                    style="background-color: #ffc107; border-color: #ffc107; margin-right: 15px;">
+                    <i class="bi bi-spotify"></i> Spotify
+                </a>
+                <a href="https://open.spotify.com/album/6P6uhUSghomANxqAcIZrDg?si=WJAgQpJMSOSLFOxpazD3gQ"
+                    target="_blank" class="btn btn-dark me-3">
+                    <i class="bi bi-play-circle"></i> Play Latest EP
+                </a>
+                <a href="https://on.soundcloud.com/xBnJghwpUiryGH9TA" target="_blank" class="btn text-dark"
+                    style="background-color: #ffc107; border-color: #ffc107;">
+                    <i class="bi bi-soundwave"></i> SoundCloud
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container text-center">
+        <h2>About Me</h2>
+        <p class="lead text-justify" style="text-align: justify;">
+            John Dave Corpuz Salomon also known as “Jeidi” is an aspiring independent musician from the Philippines. He
+            started making songs at the age of 17, and with the help of using the Looper Packs in an app to create his
+            tracks, he released his first single “Slowly” in 2022 which was all produced, mixed, and recorded using his
+            phone. Now with his latest EP “sincerely happy,” he shares his experience and struggles with depression and
+            procrastination which he turned into 2 tracks that are in this release.
+        </p>
+    </section>
+
+    <!-- Releases Section -->
+    <section id="releases" class="container">
+        <h2 class="text-center">Song Releases</h2>
+        <div class="row">
+            <!-- Song Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="SINCERELYHAPPY.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">sincerely happy</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song captures emotions around personal growth and struggles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Song Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="WHYCANTWE.jpg" class="card-img-top" alt="Slowly">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">why can't we?</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song reflects introspection and healing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Song Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="SHALLOW.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">shallow</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song captures emotions around personal growth and struggles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Song Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="HEARTACHE.jpg" class="card-img-top" alt="Slowly">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">heartache</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song reflects introspection and healing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Song Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="SLOWLY.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">slowly</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song captures emotions around personal growth and struggles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Song Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card song-card">
+                    <img src="DREAMELODY.jpg" class="card-img-top" alt="Slowly">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dreamelody</h5>
+                        <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
+                        <p class="song-description">This song reflects introspection and healing.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the same structure for the other 4 cards -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container text-center">
+        <h2>CONTACT ME:</h2>
+        <p class="lead">Reach out to me via email at <a href="mailto:jeidicozal@gmail.com">jeidicozal@gmail.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="d-flex justify-content-between align-items-center flex-wrap py-5 px-4 bg-dark text-white">
+        <!-- Left Side -->
+        <div>
+            <p class="mb-2" style="font-family: 'Krona One', sans-serif; font-size: 1.2rem;">
+                Fill your life with <span class="text-warning">different melodies♪</span>
+            </p>
+            <p class="mb-0 d-flex align-items-center">
+                <i class="bi bi-envelope me-2"></i> <!-- Email Icon -->
+                <a href="mailto:jeidicozal@gmail.com"
+                    class="text-secondary text-decoration-none">jeidicozal@gmail.com</a>
+            </p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="text-end">
+            <div class="mb-3">
+                <a href="https://www.instagram.com/yourprofile" class="text-white me-3" style="font-size: 1.5rem;">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/yourprofile" class="text-white me-3" style="font-size: 1.5rem;">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@yourprofile" class="text-white" style="font-size: 1.5rem;">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
+            <small class="text-secondary">
+                <a href="/privacy-policy" class="text-white text-decoration-none me-2">Privacy policy</a> |
+                <a href="/terms-conditions" class="text-white text-decoration-none ms-2">Terms & conditions</a>
+            </small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toggle Description Script -->
+    <script>
+        function toggleDescription(button) {
+            const description = button.nextElementSibling;
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+                button.textContent = "HIDE DESCRIPTION";
+            } else {
+                description.style.display = "none";
+                button.textContent = "SEE DESCRIPTION";
+            }
+        }
+    </script>
+</body>
+
+</html>
