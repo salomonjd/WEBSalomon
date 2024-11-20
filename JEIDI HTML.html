@@ -26,10 +26,11 @@
             height: 80vh;
             background-image: url('HEADERPIC.jpg');
             /* Replace with actual path */
+            background-color: #000;
             background-size: cover;
             background-position: center;
             position: relative;
-            color: white;
+            color: rgb(0, 0, 0);
             padding-top: 5rem;
             /* For fixed navbar spacing */
         }
@@ -61,7 +62,7 @@
             height: 100%;
             object-fit: contain;
             /* Ensure the whole image fits */
-            background-color: #f8f9fa;
+            background-color: #4a4d50;
             /* Adds neutral background color for blank spaces */
         }
 
@@ -87,7 +88,7 @@
 
         /* Footer styles */
         footer {
-            background-color: #212529;
+            background-color: #000;
             color: white;
             padding: 2rem 0;
         }
@@ -100,6 +101,12 @@
         .song-description {
             display: none;
             /* Initially hidden */
+            text-align: justify;
+            /* Aligns text to justify */
+        }
+
+        .btn {
+            font-weight: bold;
         }
 
         .toggle-btn {
@@ -196,57 +203,67 @@
             <!-- Song Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="SINCERELYHAPPY.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <img src="SINCERELYHAPPY.jpg" class="card-img-top" alt="sincerely happy">
                     <div class="card-body text-center">
                         <h5 class="card-title">sincerely happy</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song captures emotions around personal growth and struggles.
-                        </p>
+                        <p class="song-description">'sincerely happy' is an EP of mine and I wrote the following tracks
+                            to share my experience and struggles with depression and procrastination,
+                            especially when it comes to
+                            dealing with schoolworks.</p>
                     </div>
                 </div>
             </div>
             <!-- Song Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="WHYCANTWE.jpg" class="card-img-top" alt="Slowly">
+                    <img src="WHYCANTWE.jpg" class="card-img-top" alt="why can't we">
                     <div class="card-body text-center">
                         <h5 class="card-title">why can't we?</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song reflects introspection and healing.</p>
+                        <p class="song-description">'why can't we?' is the second track of my EP. I wrote this song for
+                            people to relate of how hard it is to deal with procrastination, especially during
+                            schooldays or dealing with schoolworks and also to remind them that things will eventually
+                            be fine as long as we try to look for a solution.</p>
                     </div>
                 </div>
             </div>
             <!-- Song Card 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="SHALLOW.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <img src="SHALLOW.jpg" class="card-img-top" alt="shallow">
                     <div class="card-body text-center">
                         <h5 class="card-title">shallow</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song captures emotions around personal growth and struggles.
-                        </p>
+                        <p class="song-description">My bestfriend wrote this song from some old beat that I gave him. I
+                            can't really relate to the lyrics of this song, this was just some random song me and my
+                            bestfriend created when we got united again. This song talks about someone who still can't
+                            get over with their ex.</p>
                     </div>
                 </div>
             </div>
             <!-- Song Card 4 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="HEARTACHE.jpg" class="card-img-top" alt="Slowly">
+                    <img src="HEARTACHE.jpg" class="card-img-top" alt="heartache">
                     <div class="card-body text-center">
                         <h5 class="card-title">heartache</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song reflects introspection and healing.</p>
+                        <p class="song-description">'heartache' is a song I wrote for my first love which I fumbled so
+                            hard. This song is for
+                            those people who messed up their shot but already accepted the fact that they lost.</p>
                     </div>
                 </div>
             </div>
             <!-- Song Card 5 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="SLOWLY.jpg" class="card-img-top" alt="Sincerely Happy">
+                    <img src="SLOWLY.jpg" class="card-img-top" alt="slowly">
                     <div class="card-body text-center">
                         <h5 class="card-title">slowly</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song captures emotions around personal growth and struggles.
+                        <p class="song-description">'slowly' is a song I wrote for my bestfriend and my band when we
+                            seperated ways. This is song is for those people who misses their best bud.
                         </p>
                     </div>
                 </div>
@@ -254,23 +271,28 @@
             <!-- Song Card 6 -->
             <div class="col-md-4 mb-4">
                 <div class="card song-card">
-                    <img src="DREAMELODY.jpg" class="card-img-top" alt="Slowly">
+                    <img src="DREAMELODY.jpg" class="card-img-top" alt="Dreamelody">
                     <div class="card-body text-center">
                         <h5 class="card-title">Dreamelody</h5>
                         <button class="toggle-btn" onclick="toggleDescription(this)">SEE DESCRIPTION</button>
-                        <p class="song-description">This song reflects introspection and healing.</p>
+                        <p class="song-description">'Dreamelody' is a song me and my friends made to serve as a reminder
+                            to us that we should never give up on our dreams and that we should really fight for who we
+                            really want to be in our lives, as well as to make tons of memories with each other before
+                            one of us leaves or all of us get separated. This song was just supposed to be a school
+                            project but it got real XD.</p>
                     </div>
                 </div>
             </div>
-            <!-- Repeat the same structure for the other 4 cards -->
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container text-center">
-        <h2>CONTACT ME:</h2>
+        <h1>CONTACT ME:</h1>
         <p class="lead">Reach out to me via email at <a href="mailto:jeidicozal@gmail.com">jeidicozal@gmail.com</a></p>
     </section>
+
 
     <!-- Footer Section -->
     <footer class="d-flex justify-content-between align-items-center flex-wrap py-5 px-4 bg-dark text-white">
@@ -289,19 +311,19 @@
         <!-- Right Side -->
         <div class="text-end">
             <div class="mb-3">
-                <a href="https://www.instagram.com/yourprofile" class="text-white me-3" style="font-size: 1.5rem;">
+                <a href="https://www.instagram.com/jeidicozal" class="text-white me-3" style="font-size: 1.5rem;">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/yourprofile" class="text-white me-3" style="font-size: 1.5rem;">
+                <a href="https://www.facebook.com/share/18WggZenJg/" class="text-white me-3" style="font-size: 1.5rem;">
                     <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://www.tiktok.com/@yourprofile" class="text-white" style="font-size: 1.5rem;">
+                <a href="https://www.tiktok.com/@jeidicozal" class="text-white" style="font-size: 1.5rem;">
                     <i class="bi bi-tiktok"></i>
                 </a>
             </div>
+            <!-- Updated copyright label -->
             <small class="text-secondary">
-                <a href="/privacy-policy" class="text-white text-decoration-none me-2">Privacy policy</a> |
-                <a href="/terms-conditions" class="text-white text-decoration-none ms-2">Terms & conditions</a>
+                © 2024 JEIDI. All rights reserved.
             </small>
         </div>
     </footer>
@@ -316,6 +338,7 @@
             const description = button.nextElementSibling;
             if (description.style.display === "none" || description.style.display === "") {
                 description.style.display = "block";
+                description.style.textAlign = "justify"; // Ensures the text is justified
                 button.textContent = "HIDE DESCRIPTION";
             } else {
                 description.style.display = "none";
